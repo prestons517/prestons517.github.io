@@ -8,6 +8,8 @@
     <title>Preston So's Portfolio</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="devicon-master/devicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--[if lt IE 9]>
 
@@ -39,41 +41,42 @@
     <!--</div>-->
 <!--</nav>-->
 <nav class="navbar navbar-expand-lg bg-info  fixed-top">
-    <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
-        <!--<span class="navbar-toggler-icon"></span>-->
-    <!--</button>-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link text-light" href="#">About</a>
+                <a class="nav-link text-light" href="#aboutsection">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="#">Work Experience</a>
+                <a class="nav-link text-light" href="#workExperience">Work Experience</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="#">Projects</a>
+                <a class="nav-link text-light" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="#">Contact</a>
+                <a class="nav-link text-light" href="#contact">Contact</a>
             </li>
         </ul>
     </div>
 </nav>
-<br>
-<br>
+<a id="aboutsection"></a>
 <br>
 
+<br>
+<br>
 <div class="jumbotron">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <img src="profilepicclose.jpg" class="rounded-circle" width="250" height="260" align="right">
+                <img src="profilepicclose.jpg" class="rounded-circle" width="250" height="260" align="left">
             </div>
             <div class="col-md-9">
                 <h1 align="center">Preston So</h1>
-                <h2 align="center"><small>University of California, Irvine | Organizations and Information Technology</small></h2>
-                <h2 align="center"><small>B.S Informatics | Computer Science Minor</small></h2>
-                <h2 align="center"><small>Major GPA 3.48</small></h2>
+                <h3 align="center"><small>University of California, Irvine | Organizations and Information Technology</small></h3>
+                <h3 align="center"><small>B.S Informatics | Information and Computer Science Minor</small></h3>
+                <h3 align="center"><small>Major GPA 3.48</small></h3>
             </div>
 
         </div>
@@ -244,13 +247,14 @@
 <br>
 
 <div class="container">
-    <div class="row">
+    <div class="row" id="workExperience">
         <button class="btn btn-outline-secondary btn-lg" onClick="location.href='resume.pdf'">Download My Resume</button>
     </div>
 
 </div>
 <br>
-<section id="workExperience" class="bg-info">
+
+<section class="bg-info">
     <br>
     <div class="text-light font-weight-bold" align="middle"><h1>Work Experience</h1></div>
     <br>
@@ -303,7 +307,9 @@
                 <p align="middle"> I worked at Academia Sinica as a SmartHear Application Intern. Academia Sinica is the National Academy of Taiwan, located in Nangang District, Taipei. During my time at Academia Sinica I developed a tutorial video for the SmartHear App using PowerPoint and self-made, audio recordings. The UI of the application was re-designed iteratively and many mockups/prototypes were created for testing purposes. A great deal of my work at Academia Sinica involved gathering system requirements as well as applying user testing practices. These user testing practices include surveys as well as interviews with the locals in the area. This application is available on the Google Play Store as "SmartHear" </p></br></br></br>
                 <h4>
                 <p  align="middle">Below, you can download and the view the research paper about SmartHear.</p></h4>
-                </br><p align="middle"> <button class="btn btn-outline-light btn-lg" onClick="location.href='smarthearpaper.pdf'">SmartHear Article</button></p>
+                </br><p align="middle"> <a id="projects"></a>
+                <button class="btn btn-outline-light btn-lg" onClick="location.href='smarthearpaper.pdf'">SmartHear Article</button></p>
+
                 <br>
                 <br>
                 <br>
@@ -315,7 +321,7 @@
     </div>
 
 </section>
-<section id="projects" class="bg-secondary">
+<section class="bg-secondary">
     <br>
     <div class="font-weight-bold" align="middle"><h1>Projects</h1></div>
     <br>
@@ -359,13 +365,27 @@
     <br>
     <br>
 </section>
+<section id="contact" class="bg-white">
+    <br>
+    <div class="font-weight-bold" align="middle"><h1>Feel free to contact me!</h1></div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col" align="right">
+                <a href="mailto:prestons@uci.edu"><i class="material-icons" style="font-size:100px">contact_mail</i></a>
+            </div>
+            <div class="col" align="left">
+                <a href="https://www.linkedin.com/in/preston-so/"><i class="fa fa-linkedin-square" style="font-size:100px"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</section>
 
 
-
-
-<!--<div class="slidecontainer">
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-</div>-->
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
